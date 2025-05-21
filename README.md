@@ -315,4 +315,18 @@ VITE_API_URL=https://ai-powered-job-match-platform-chi.vercel.app/api
    - Add environment variables
    - Deploy
 
+## 🔄 Trade-offs & Assumptions
+
+### Trade-offs Made
+- **AI Provider**: Chose Cohere over OpenAI for cost-effectiveness and reliable free tier
+- **Styling**: Used Bootstrap instead of Tailwind for faster development and component library
+- **Database**: MongoDB for rapid prototyping vs PostgreSQL for production scalability
+- **Authentication**: Simple JWT implementation vs OAuth for assignment scope
+
+### Assumptions
+- Users will have basic job-seeking profiles with standard skills
+- Job listings are relatively static (suitable for seeded data)
+- AI recommendations focus on skill matching over complex career progression
+- Free tier API limits are sufficient for demo purposes
+
 **Built with ❤️ by [Piyush Guyal](https://github.com/piyushgyl01)**
